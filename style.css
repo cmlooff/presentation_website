@@ -8,3 +8,13 @@
   /* Animation Speed */
   --animate-speed: 1s;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* No scroll bar seen on the page */
+  overflow: hidden;
+}
