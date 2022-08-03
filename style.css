@@ -6,7 +6,7 @@
   --page-4-color: slateblue;
 
   /* Animation Speed */
-  --animate-speed: 1s;
+  --animate-speed: 2s;
 }
 
 body {
@@ -55,4 +55,53 @@ body {
 
 .page p {
   font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+
+  /* Transition */
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+/* Page Animation */
+#page-1 h1 {
+  transform: translateY(-800px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-800px);
+  animation: paragraph var(--animate-speed) forwards ease-in 2s;
+}
+
+@keyframes heading {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
 }
